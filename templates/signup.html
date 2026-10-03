@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Create account — VoxPilot AI{% endblock %}
+{% block content %}
+<section class="auth-wrap">
+  <div class="auth-card">
+    <div class="eyebrow">START YOUR WORKFORCE</div>
+    <h1>Create your VoxPilot workspace</h1>
+    <p>Account persistence and authentication will be connected in a later phase.</p>
+    <form onsubmit="return false">
+      <label>Company name<input type="text" placeholder="Your company"></label>
+      <label>Work email<input type="email" placeholder="you@company.com"></label>
+      <label>Password<input type="password" placeholder="Create a password"></label>
+      <button class="button primary" type="submit">Create workspace</button>
+    </form>
+    <a href="/login" class="muted-link">Already have an account →</a>
+  </div>
+</section>
+{% endblock %}

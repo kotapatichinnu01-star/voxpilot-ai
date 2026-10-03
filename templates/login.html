@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Sign in — VoxPilot AI{% endblock %}
+{% block content %}
+<section class="auth-wrap">
+  <div class="auth-card">
+    <div class="eyebrow">VOXPILOT AI</div>
+    <h1>Welcome back</h1>
+    <p>Sign-in infrastructure will be connected in the next foundation phase.</p>
+    <form onsubmit="return false">
+      <label>Email<input type="email" placeholder="you@company.com"></label>
+      <label>Password<input type="password" placeholder="••••••••"></label>
+      <button class="button primary" type="submit">Continue</button>
+    </form>
+    <a href="/signup" class="muted-link">Create an account →</a>
+  </div>
+</section>
+{% endblock %}
